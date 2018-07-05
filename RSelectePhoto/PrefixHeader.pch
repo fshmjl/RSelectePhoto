@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  RSelectePhoto
+//
+//  Created by RPK on 2018/7/5.
+//  Copyright © 2018年 BruceAlbert. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+// 列间距
+static const float   kColumnMargin = 5;
+// 行间距
+static const float   kRowMargin    = 5;
+// 一行显示图片个数
+static const int     kRowCount     = 4;
+
+#define R_SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define R_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define R_ITEM_WIDTH    (R_SCREEN_WIDTH - (kRowCount + 1)*kColumnMargin)/kRowCount
+
+#endif /* PrefixHeader_pch */
